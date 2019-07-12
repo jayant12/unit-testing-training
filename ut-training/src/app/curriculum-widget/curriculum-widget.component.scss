@@ -1,0 +1,108 @@
+$bronze: #A4A4AF;
+$brand-green: #00C09D;
+$gun-powder: #48485E;
+$border-active-item: #E4E4E4;
+$basic-anchor-color: #2D87B0;
+$gun-powder-heading: #484860;
+$cornflower-blue: #53a0fd;
+$shamrock: #2FD1AB;
+
+.curriculum-widget-content {
+  padding-top: 21px;
+  font-family: Roboto;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .widget-heading {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $bronze;
+    .chapter-details {
+      cursor: pointer;
+      color: $brand-green;
+    }
+  }
+
+  .widget-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .next-container-heading {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    text-align: center;
+    color: $gun-powder;
+  }
+
+  .next-resource-container {
+    width: 290px;
+    max-width: 90%;
+    padding: 12px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
+    background-color: white;
+    border: solid 1px $border-active-item;
+    margin-top: 20px;
+
+    .next-resource-name {
+      font-size: 15px;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      text-align: left;
+      color: $basic-anchor-color;
+      cursor: pointer;
+    }
+
+    .next-resource-efforts {
+      font-size: 9px;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      text-align: left;
+      color: $gun-powder-heading;
+      margin-top: 5px;
+      img {
+        width: 9px;
+      }
+    }
+  }
+
+  .go-to-curriculum-button {
+    width: 180px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 3px;
+    background-image: linear-gradient(341deg, $cornflower-blue, $shamrock);
+    border: solid 1px $basic-anchor-color;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    margin-top: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    line-height: 20px;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    .arrow-image {
+      width: 16px;
+      margin-right: 10px;
+    }
+    &:hover {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+      background-image: linear-gradient(341deg, #468de2, #35c4a2);
+    }
+  }
+
+}

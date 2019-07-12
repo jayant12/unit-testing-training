@@ -1,0 +1,28 @@
+<app-curriculum-widget-heading [curriculumWidgetHeading]="curriculumWidgetHeading"></app-curriculum-widget-heading>
+<div class="curriculum-widget-content">
+  <div class="widget-heading">
+    YOU’RE IN
+    <span class="chapter-details" (click)="navigateToCurriculum()">
+      {{unitIndex}} - {{unitName}}
+    </span>
+  </div>
+  <div class="widget-container">
+    <div class="next-container-heading">
+      Next:
+    </div>
+    <div class="next-resource-container">
+      <div class="next-resource-name" (click)="navigateToResource()">
+      <span *ngIf="curriculumWidgetData.resource_type">
+      {{curriculumWidgetData.resource_type}}:
+      </span>
+        {{curriculumWidgetData.resource_name}}
+      </div>
+      <div class="next-resource-efforts" *ngIf="curriculumWidgetData.resource_max_effort">
+        {{curriculumWidgetData.resource_max_effort}}
+      </div>
+    </div>
+    <div class="go-to-curriculum-button" (click)="navigateToCurriculum(); clickEventEmitter.emit(true)">
+      Go to curriculum
+    </div>
+  </div>
+</div>

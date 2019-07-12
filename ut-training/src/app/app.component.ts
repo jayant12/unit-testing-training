@@ -18,4 +18,8 @@ export class AppComponent implements OnInit {
     this.progressText = this.testService.getProgressText('projects', '60', '70', false);
     console.log(this.progressText);
   }
+
+  onButtonClick() {
+    console.log('Button clicked');
+  }
 }
