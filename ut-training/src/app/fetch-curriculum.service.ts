@@ -1,12 +1,11 @@
 import {Injectable} from '@angular/core';
 import {CURRICULUM_WIDGET_DATA} from './curriculum-widget/curriculum-widget.mock';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class FetchCurriculumService {
 
   constructor() {
+    console.log('work work');
   }
 
   getCurriculumData(): any {

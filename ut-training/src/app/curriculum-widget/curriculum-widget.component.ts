@@ -22,6 +22,7 @@ export class CurriculumWidgetComponent implements OnInit {
 
   ngOnInit() {
     this.curriculumWidgetData = this.fetchCurriculumService.getCurriculumData();
+    debugger;
     this.getChapterNameandIndex();
   }
 
