@@ -10,7 +10,7 @@ describe('TestService', () => {
     expect(service).toBeTruthy();
   });
 
-  it('should return correct progress text for "curriculum" progressType', () => {
+  it('unit test 1', () => {
     //  Arrange
 
     //  Act
@@ -18,42 +18,5 @@ describe('TestService', () => {
     //  Assert
     expect(1).toBeTruthy();
   });
-
-  it('should return correct progress text for "projects" progressType for a career track course', () => {
-    //  Arrange
-
-    //  Act
-
-    //  Assert
-    expect(1).toBeTruthy();
-  });
-
-  it('should return correct progress text for "projects" progressType for a non-career track course', () => {
-    //  Arrange
-
-    //  Act
-
-    //  Assert
-    expect(1).toBeTruthy();
-  });
-
-  it('should return correct progress text for "interviews" progressType', () => {
-    //  Arrange
-
-    //  Act
-
-    //  Assert
-    expect(1).toBeTruthy();
-  });
-
-  it('should return "" if progressType is not passed', () => {
-    //  Arrange
-
-    //  Act
-
-    //  Assert
-    expect(1).toBeTruthy();
-  });
-
 
 });
